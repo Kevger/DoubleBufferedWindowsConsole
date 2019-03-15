@@ -7,7 +7,7 @@ C ++ class with which you can selectively output characters to the console depen
 - Unicode UTF-16 support
 - Place characters freely on the console
 
-##How to use
+## How to use
 ```
 ...
 //init class
