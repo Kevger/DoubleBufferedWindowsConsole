@@ -15,9 +15,9 @@ const auto attributes = FOREGROUND_GREEN | FOREGROUND_INTENSITY; //text attribut
 DoubleBufferedConsole<wchar_t> myConsole(L"MyTitle",width,height);
 
 //printing stuff
-myConsole.clear(' ', FOREGROUND_GREEN); // clear background buffer and set foreground to green color
+myConsole.clear(' ',FOREGROUND_GREEN); // clear background buffer and set foreground to green color
 ...
-myConsole.write(x,y,L'Ʃ',FOREGROUND_GREEN); // write the unicode character 'Ʃ' to (x|y) in the background buffer
+myConsole.write(x,y,L'Ʃ',attributes); // write the unicode character 'Ʃ' to (x|y) in the background buffer
 ...
 myConsole.flip();  // flip the background buffer with the foreground buffer. This will show the new screen.
 ```
